@@ -1,20 +1,17 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './Homepage.module.css';
-import Countries from '../Countries';
 
 export default () => {
-    return (
-        <div className={styles.container}>
+  return (
+    <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className={styles.title}>
-          Hello!
-        </h1>
+        <h1 className={styles.title}>Hello!</h1>
 
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
@@ -41,8 +38,7 @@ export default () => {
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
@@ -99,5 +95,5 @@ export default () => {
         }
       `}</style>
     </div>
-    )
-}
+  );
+};

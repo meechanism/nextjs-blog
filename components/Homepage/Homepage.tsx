@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from '../styles/Home.module.css';
+import styles from './Homepage.module.css';
+import Countries from '../Countries';
 
-export default function Home() {
-  return (
-    <div className={styles.container}>
+export default () => {
+    return (
+        <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -25,9 +26,9 @@ export default function Home() {
             <p>Learn more about me</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Contact &rarr;</h3>
-            <p>Get in touch!</p>
+          <a href="/projects/jokes" className={styles.card}>
+            <h3>Jokes &rarr;</h3>
+            <p>Come laugh!</p>
           </a>
 
           <Link href="/posts/first-post" className={styles.card}>
@@ -98,5 +99,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+    )
 }

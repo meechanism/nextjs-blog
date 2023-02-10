@@ -1,12 +1,16 @@
+import { useContext } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './Homepage.module.css';
 
+import { GlobalContext } from '../../pages';
+
 export default () => {
+  const { name } = useContext(GlobalContext);
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Hello</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,7 +24,7 @@ export default () => {
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>About &rarr;</h3>
-            <p>Learn more about me</p>
+            <p>Learn more about {name}</p>
           </a>
 
           <a href="/projects/jokes" className={styles.card}>

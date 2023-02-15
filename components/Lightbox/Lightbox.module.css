@@ -1,0 +1,44 @@
+.container {
+  top: 50%;
+  left: 50%;
+  outline: none;
+  min-width: 500px;
+  overflow: auto;
+  position: fixed;
+  border-radius: 3px;
+  border: 1px solid #000;
+  transform: translate(-50%, -50%);
+  background: rgb(255, 255, 255);
+}
+
+.custom_overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.78);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.close {
+  background: transparent;
+  padding: 0 1em;
+  border: 0;
+  margin: 0;
+  font-size: 2em;
+}
+
+.close:hover {
+  background: red;
+  cursor: pointer;
+}
+
+.body {
+  padding: 2em;
+}

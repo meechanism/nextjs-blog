@@ -5,6 +5,8 @@ import styles from './Homepage.module.css';
 
 import { GlobalContext } from '../../pages';
 
+import LightBox from '../Lightbox';
+
 export default () => {
   const { name } = useContext(GlobalContext);
   return (
@@ -17,9 +19,9 @@ export default () => {
       <main>
         <h1 className={styles.title}>Hello!</h1>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <LightBox buttonCopy="Clickme" title="You did it">
+          <img src="https://via.placeholder.com/150" />
+        </LightBox>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
@@ -34,6 +36,10 @@ export default () => {
 
           <Link href="/posts/first-post" className={styles.card}>
             <h3>Blog &rarr;</h3>
+          </Link>
+
+          <Link href="/playground" className={styles.card}>
+            <h3>Playground &rarr;</h3>
           </Link>
         </div>
       </main>
